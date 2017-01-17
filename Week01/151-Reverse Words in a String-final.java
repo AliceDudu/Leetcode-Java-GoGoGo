@@ -19,42 +19,42 @@
 
 public class Solution {
 	public String reverseWords (String s){
-	
+
 		// string 是否为空 的判断 两种区别没听懂
-	
+
 		// To store words
 		ArrayList<String> list = new ArrayList<String>();	// ??? why ArrayList? can store different length?
-		
+
 		int i = 0;
-		int n = s.length();  
-		
+		int n = s.length();
+
 		while ( i < n ){
-			if ( !(s.charAt(i) == ' ') ){ 
+			if ( !(s.charAt(i) == ' ') ){
 				int j = i;
 				String tmp = "";
-				
+
 				// To store single word
 				while ( j < n && !(s.charAt(j) == ' ') ){
-					tmp += s.charAt(j);  
+					tmp += s.charAt(j);
 					j++;
 				}
-				
+
 				// Add single word to ArrayList
-				list.add(tmp);  
+				list.add(tmp);
 				i = j;
-			}else 
+			}else
 				i++;
 		}
-		
-		String result = "";  
-		
+		// better to use StringBuilder
+		String result = "";
+
 		// Get word from end to start, store in string
 		for ( int j = list.size() -1; j >= 0; j-- ){
 			result = result + list.get(j) + " ";
 		}
-		
-		// 
-		return result.equals("") ? result : result.substring(0, result.length()-1);  // ??? result.equals("") 
-		
+
+		//
+		return result.equals("") ? result : result.substring(0, result.length()-1);  // ??? result.equals("")
+
 	}
 }
