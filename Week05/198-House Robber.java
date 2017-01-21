@@ -20,8 +20,10 @@ public class Solution{
 // 		int max = (int) Collections.max(dp);
 // 		List b = Arrays.asList(ArrayUtils.toObject(dp));
 // 		int max = Collections.max(b);
-		int max = Arrays.stream(dp).max().getAsInt();
+// 		int max = Arrays.stream(dp).max().getAsInt();
+// 		return max;
 		
-		return max;		//5.注意返回值
+		return dp[nums.length];		//5.注意返回值
 	}
 }
+
