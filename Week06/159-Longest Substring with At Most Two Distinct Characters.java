@@ -1,5 +1,5 @@
 public class Solution{	
-	public int length(String s){
+	public int lengthOfLongestSubstringTwoDistinct(String s){
 		//corner
 		if ( s == null || s.length() == 0 ){
 			return 0;
@@ -39,7 +39,7 @@ public class Solution{
 
 
 
-// 	public int length(String s){
+// 	public int lengthOfLongestSubstringTwoDistinct(String s){
 // 		int left = 0;
 // 		int right = -1;
 // 		int maxLen = 0;
