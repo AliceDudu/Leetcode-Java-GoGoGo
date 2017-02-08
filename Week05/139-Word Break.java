@@ -1,3 +1,4 @@
+
 public class Solution{
 	public boolean wordBreak( String s, List<String> dict ){
 		if ( s == null || s.length() == 0 ){
