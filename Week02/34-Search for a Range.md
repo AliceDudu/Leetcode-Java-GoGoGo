@@ -25,7 +25,7 @@ public class Solution {
 	//find the first number that is greater than or equal to target.
 	//could return A.length if target is greater than A[A.length-1].
 	//actually this is the same as lower_bound in C++ STL.
-	public int firstGreaterEqual( int[] A, int target ){
+	public static int firstGreaterEqual( int[] A, int target ){
 		int low = 0;
 		int high = A.length;
 		
